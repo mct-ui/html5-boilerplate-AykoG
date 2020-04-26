@@ -9,7 +9,7 @@ html {
     line-height: 1.5;
     font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
     color: #111;
-    padding: 24px 24px 0;
+    padding: 48px 24px 24px;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -18,6 +18,17 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+body {
+    max-width: 42em;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    html {
+        padding: 48px 48px 24px;
+    }
 }
 
 /*
@@ -100,7 +111,7 @@ ol {
 }
 
 li ul,
-li ol{
+li ol {
     margin-bottom: 0;
 }
 
@@ -113,7 +124,7 @@ blockquote {
 }
 
 blockquote * {
-    font-style: inherit;
+    font-size: inherit;
     line-height: inherit;
 }
 
@@ -127,7 +138,7 @@ figcaption {
 hr {
     border: 0;
     height: 1px;
-    background: LightGrey;
+    background: gainsboro;
     margin: 0 0 24px;
 }
 
@@ -172,7 +183,6 @@ td {
     These examples override the primary ('mobile first') styles.
     Modify as content requires.
 */
-
 
 /* Extra small devices (portrait phones, less than 576px)
    No media query since this is the default in Bootstrap
